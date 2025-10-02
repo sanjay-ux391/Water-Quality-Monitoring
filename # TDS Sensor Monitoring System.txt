@@ -1,0 +1,58 @@
+# TDS Sensor Monitoring System
+
+## Project Overview
+This project implements a Total Dissolved Solids (TDS) sensor monitoring system using an ESP8266 microcontroller. The system reads analog values from the TDS sensor, converts them to parts per million (ppm), displays the data on an LCD, and sends the data to cloud platforms (Blynk and ThingSpeak) for remote monitoring. Additionally, the system triggers alerts via the Blynk app if the TDS value exceeds a predefined threshold.
+
+## Features
+- ESP8266 microcontroller-based implementation
+- TDS sensor analog value acquisition and conversion to ppm
+- Real-time display of TDS values on an LCD screen
+- Cloud data uploading to Blynk Cloud and ThingSpeak platforms
+- Threshold comparison to trigger alerts on the Blynk app
+- Periodic sensor reading with delay between readings
+
+## Hardware Components
+- ESP8266 microcontroller board
+- TDS sensor module
+- LCD display (compatible with ESP8266)
+- WiFi connectivity for cloud communication
+- Power supply (as per the microcontroller and sensor requirements)
+
+## Software Components
+- Arduino IDE or compatible environment for programming ESP8266
+- Blynk app for remote alerts and monitoring
+- ThingSpeak account for data visualization and logging
+
+## Flowchart
+The system follows this high-level flowchart:
+- Initialize system (ESP8266, TDS sensor, LCD, WiFi)
+- Read analog value from TDS sensor
+- Convert the analog value to TDS ppm
+- Display TDS on LCD
+- Send data to Blynk Cloud
+- Send data to ThingSpeak
+- Check if TDS exceeds threshold
+  - If yes, trigger alert in Blynk app
+- Delay/wait for next reading
+- Repeat the process
+
+## Usage
+1. Connect the hardware components as per the schematic.
+2. Configure your WiFi credentials in the code.
+3. Set up Blynk and ThingSpeak accounts and configure their tokens/keys in the code.
+4. Upload the program to the ESP8266 board.
+5. Monitor the TDS readings on the LCD and remotely via Blynk and ThingSpeak.
+6. Receive alerts on Blynk app in case of high TDS levels.
+
+## Code Structure
+- `setup()`: Initializes all the hardware and starts WiFi connection.
+- `loop()`: Continuously reads TDS sensor values and handles display, cloud upload, and alert triggers.
+- Helper functions for reading sensor data, converting values, sending data, and checking thresholds.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+- Inspired by IoT monitoring and cloud integration techniques.
+- Uses Blynk and ThingSpeak for real-time IoT data visualization.
+
