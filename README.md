@@ -238,10 +238,3 @@ Creating a **complete smart water monitoring ecosystem**.
 This project is for educational and research purposes.
 
 ---
-
-## 14. Author
-
-**Sanjay**
-📧 [your-email@sanjaypriyan0987@gmail.com]
-🔗 [https://github.com/sanjay-ux391]
----
